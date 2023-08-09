@@ -5,7 +5,13 @@ const cors = require("cors");
 
 /* GET home page. */
 
-router.use(cors());
+router.use(cors({
+
+origin:["https://blog-app-frontend-five.vercel.app"],
+  methods:["POST" , "GET"],
+  credentials: true
+  
+}));
 
 mongoose.connect('mongodb+srv://saharshshrivastava302002:ODqlSR8qYpN1hxQH@cluster0.lcjavdi.mongodb.net/Blog_App_Database?retryWrites=true&w=majority')
 
