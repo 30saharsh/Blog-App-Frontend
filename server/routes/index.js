@@ -13,7 +13,7 @@ router.use(cors({
                
                ));
 
-mongoose.connect('mongodb+srv://saharshshrivastava302002:ODqlSR8qYpN1hxQH@cluster0.lcjavdi.mongodb.net/saharshshrivastava302002?retryWrites=true&w=majority')
+mongoose.connect('mongodb+srv://saharshshrivastava302002:ODqlSR8qYpN1hxQH@cluster0.lcjavdi.mongodb.net/Blog_App_Database?retryWrites=true&w=majority')
 
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
