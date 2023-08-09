@@ -5,13 +5,7 @@ const cors = require("cors");
 
 /* GET home page. */
 
-router.use(cors({
-
-               origin:["https://deploy-mern-1whq.vercel.app"],
-  methods:["POST" , "GET" ],
-  credentials: true
-               
-               ));
+router.use(cors());
 
 mongoose.connect('mongodb+srv://saharshshrivastava302002:ODqlSR8qYpN1hxQH@cluster0.lcjavdi.mongodb.net/Blog_App_Database?retryWrites=true&w=majority')
 
