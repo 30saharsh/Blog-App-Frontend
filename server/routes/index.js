@@ -5,7 +5,13 @@ const cors = require("cors");
 
 /* GET home page. */
 
-router.use(cors());
+router.use(cors({
+
+               origin:["https://deploy-mern-1whq.vercel.app"],
+  methods:["POST" , "GET" ],
+  credentials: true
+               
+               ));
 
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
